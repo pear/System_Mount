@@ -21,6 +21,28 @@
     </maintainers>
 
             <release>
+            <version>1.0.0</version>
+            <date>2004-07-12</date>
+            <state>stable</state>
+            <license>PHP License v3.0</license>
+            <notes><![CDATA[
+                * New stable release. No changes since beta2.
+            ]]></notes>
+            <filelist>
+                <dir name="/" baseinstalldir="System">
+                    <file role="php" name="Mount.php">
+                        <replace from="@version@" to="version" type="package-info"/>
+                        <replace from="@package@" to="package" type="package-info"/>
+                    </file>
+                </dir>
+                <dir name="/" baseinstalldir="docs/System_Mount">
+                    <file role="php">example.php</file>
+                </dir>
+            </filelist>
+        </release>
+    
+    <changelog>
+        <release>
             <version>1.0.0beta2</version>
             <date>2004-06-09</date>
             <state>beta</state>
@@ -43,9 +65,6 @@
                 </dir>
             </filelist>
         </release>
-    
-    <changelog>
-
         <release>
             <version>1.0.0beta1</version>
             <date>2004-04-28</date>
