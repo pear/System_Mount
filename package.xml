@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package version="1.0">
+    <name>System_Mount</name>
+    <summary>Mount and unmount devices in fstab</summary>
+    <description><![CDATA[
+        System_Mount provides a simple interface to deal with mounting and unmounting devices listed in the system's fstab.
+        
+        Features:
+        * Very compact, easy-to-read code, based on File_Fstab.
+        * Examines mount options to determine if a device can be mounted or not.
+        * Extremely easy to use.
+        * Fully documented with PHPDoc.
+    ]]></description>
+    <maintainers>
+        <maintainer>
+            <user>ieure</user>
+            <name>Ian Eure</name>
+            <email>ieure@php.net</email>
+            <role>lead</role>
+        </maintainer>
+    </maintainers>
+
+    <release>
+        <version>1.0.0beta2</version>
+        <date>2004-06-09</date>
+        <state>beta</state>
+        <license>PHP License v3.0</license>
+        <notes><![CDATA[
+            * Update to new (2.0.0) File_Fstab semantics.
+            * Better error checking in example code.
+            * Fix constructor, make sure File_Fstab gets the correct entryClass.
+            * Bump dep versions.
+            * Store mtab instance in a PEAR staticProperty instead of calling singleton() zillions of times.
+            * 
+        ]]></notes>
+        <filelist>
+            <dir name="/" baseinstalldir="System">
+                <file role="php" name="Mount.php">
+                    <replace from="@version@" to="version" type="package-info"/>
+                    <replace from="@package@" to="package" type="package-info"/>
+                </file>
+            </dir>
+            <dir name="/" baseinstalldir="docs/System_Mount">
+                <file role="php">example.php</file>
+            </dir>
+        </filelist>
+    </release>
+    
+    <changelog>
+        <release>
+            <version>1.0.0beta1</version>
+            <date>2004-04-28</date>
+            <state>beta</state>
+            <license>PHP License v3.0</license>
+            <notes><![CDATA[
+                * Fix docblocks, use @var instead of @type.
+                * Add simple example to class docblock.
+                * Minor CS fix, 'false' instead of 'FALSE.'
+                * Don't return from constructor.
+            ]]></notes>
+            <filelist>
+                <dir name="/" baseinstalldir="System">
+                    <file role="php" name="Mount.php">
+                        <replace from="@version@" to="version" type="package-info"/>
+                        <replace from="@package@" to="package" type="package-info"/>
+                    </file>
+                </dir>
+            </filelist>
+        </release>
+        <release>
+            <version>0.9.1</version>
+            <date>2004-01-16</date>
+            <state>stable</state>
+            <license>PHP License v2.02</license>
+            <notes>Initial PEARification.</notes>
+            <filelist>
+                <dir name="/" baseinstalldir="System">
+                    <file role="php">Mount.php</file>
+                </dir>
+            </filelist>
+        </release>
+    </changelog>
+
+    <deps>
+        <dep type="pkg" rel="ge" version="2.0.0beta1">File_Fstab</dep>
+        <dep type="pkg" rel="has">System_Command</dep>
+        <dep type="pkg" rel="has" optional="yes">File</dep>
+    </deps>
+</package>
