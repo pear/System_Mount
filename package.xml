@@ -20,36 +20,9 @@
         </maintainer>
     </maintainers>
 
-    <release>
-        <version>1.0.0beta2</version>
-        <date>2004-06-09</date>
-        <state>beta</state>
-        <license>PHP License v3.0</license>
-        <notes><![CDATA[
-            * Update to new (2.0.0) File_Fstab semantics.
-            * Better error checking in example code.
-            * Fix constructor, make sure File_Fstab gets the correct entryClass.
-            * Bump dep versions.
-            * Store mtab instance in a PEAR staticProperty instead of calling singleton() zillions of times.
-            * 
-        ]]></notes>
-        <filelist>
-            <dir name="/" baseinstalldir="System">
-                <file role="php" name="Mount.php">
-                    <replace from="@version@" to="version" type="package-info"/>
-                    <replace from="@package@" to="package" type="package-info"/>
-                </file>
-            </dir>
-            <dir name="/" baseinstalldir="docs/System_Mount">
-                <file role="php">example.php</file>
-            </dir>
-        </filelist>
-    </release>
-    
-    <changelog>
-        <release>
-            <version>1.0.0beta1</version>
-            <date>2004-04-28</date>
+            <release>
+            <version>1.0.0beta2</version>
+            <date>2004-06-09</date>
             <state>beta</state>
             <license>PHP License v3.0</license>
             <notes><![CDATA[
@@ -57,6 +30,34 @@
                 * Add simple example to class docblock.
                 * Minor CS fix, 'false' instead of 'FALSE.'
                 * Don't return from constructor.
+            ]]></notes>
+            <filelist>
+                <dir name="/" baseinstalldir="System">
+                    <file role="php" name="Mount.php">
+                        <replace from="@version@" to="version" type="package-info"/>
+                        <replace from="@package@" to="package" type="package-info"/>
+                    </file>
+                </dir>
+                <dir name="/" baseinstalldir="docs/System_Mount">
+                    <file role="php">example.php</file>
+                </dir>
+            </filelist>
+        </release>
+    
+    <changelog>
+
+        <release>
+            <version>1.0.0beta1</version>
+            <date>2004-04-28</date>
+            <state>beta</state>
+            <license>PHP License v3.0</license>
+            <notes><![CDATA[
+                * Update to new (2.0.0) File_Fstab semantics.
+                * Better error checking in example code.
+                * Fix constructor, make sure File_Fstab gets the correct entryClass.
+                * Bump dep versions.
+                * Store mtab instance in a PEAR staticProperty instead of calling singleton() zillions of times.
+                * 
             ]]></notes>
             <filelist>
                 <dir name="/" baseinstalldir="System">
