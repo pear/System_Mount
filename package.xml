@@ -17,7 +17,7 @@ Features:
   <active>yes</active>
  </lead>
  <date>2010-10-06</date>
- <time>22:40:56</time>
+ <time>22:42:02</time>
  <version>
   <release>1.0.1</release>
   <api>1.0.0</api>
@@ -35,7 +35,7 @@ Bug #2540 Missing end user docs
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
-   <file baseinstalldir="docs/System_Mount" md5sum="6ba09c8e6d4758ff48e4842c08fc2d5c" name="System/Mount.php" role="php" />
+   <file baseinstalldir="docs/System_Mount" md5sum="07a15a671cc972363131876bc6c5da62" name="System/Mount.php" role="php" />
    <file baseinstalldir="docs/System_Mount" md5sum="cff0a2da0e07ed9e6b2e9e4bb6ff8a46" name="example.php" role="php" />
   </dir>
  </contents>
@@ -149,7 +149,7 @@ Initial PEARification.
 QA Release
 Package 2.0
 SVN layout
-Missing end user docs[D
+Bug #2540 Missing end user docs
    </notes>
   </release>
  </changelog>
