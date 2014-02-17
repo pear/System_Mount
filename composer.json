@@ -8,7 +8,7 @@
     ],
     "autoload": {
         "psr-0": {
-            "System_Mount": "./"
+            "System": "./"
         }
     },
     "description": "More info available on: http://pear.php.net/package/System_Mount",
@@ -23,9 +23,13 @@
     },
     "type": "library",
     "require": {
-        "pear/pear_exception": "*"
+        "pear/pear_exception": "*",
+        "pear/file_fstab": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "*"
+    },
+    "suggest": {
+        "pear/file": "Install optionally via your project's composer.json"
     }
 }
